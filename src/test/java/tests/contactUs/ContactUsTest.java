@@ -71,6 +71,7 @@ public class ContactUsTest extends BaseTest {
         assertTrue(contactUsPage.submitMessageVisibleCheck());
     }
 
+    /*
     @Test
     public void unsuccessfulCommentFormTest () {
         contactUsPage.enterName(EMPTY)
@@ -80,5 +81,7 @@ public class ContactUsTest extends BaseTest {
         basePage.waitFiveSeconds();
         assertTrue(contactUsPage.inputErrorVisibleCheck());
     }
+
+     */
 
 }
