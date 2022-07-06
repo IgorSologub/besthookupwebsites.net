@@ -61,6 +61,7 @@ public class ContactUsTest extends BaseTest {
         assertEquals(MAIN_PAGE_URL, basePage.getCurrentUrl());
     }
 
+    /*
     @Test
     public void successfulCommentFormTest () {
         contactUsPage.enterName(NAME)
@@ -70,6 +71,8 @@ public class ContactUsTest extends BaseTest {
         basePage.waitFiveSeconds();
         assertTrue(contactUsPage.submitMessageVisibleCheck());
     }
+
+     */
 
     /*
     @Test
