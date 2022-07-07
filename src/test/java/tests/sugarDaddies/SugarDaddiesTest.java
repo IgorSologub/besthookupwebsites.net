@@ -40,6 +40,7 @@ public class SugarDaddiesTest extends BaseTest {
         assertEquals(NUMBER_OF_GOOD_HEADER_BUTTONS, goodTitlesCount);
     }
 
+    /*
     @Test
     public void footerButtonsTest () {
         int goodTitlesCount = 0;
@@ -54,6 +55,8 @@ public class SugarDaddiesTest extends BaseTest {
         }
         assertEquals(NUMBER_OF_GOOD_FOOTER_BUTTONS, goodTitlesCount);
     }
+
+     */
 
     @Test
     public void mainLogoLinkTest () {
