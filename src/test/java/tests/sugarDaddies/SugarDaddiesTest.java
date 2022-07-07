@@ -40,11 +40,11 @@ public class SugarDaddiesTest extends BaseTest {
         assertEquals(NUMBER_OF_GOOD_HEADER_BUTTONS, goodTitlesCount);
     }
 
-    /*
+
     @Test
     public void footerButtonsTest () {
         int goodTitlesCount = 0;
-        for (int i = 1; i <= NUMBER_OF_GOOD_FOOTER_BUTTONS; i++) {
+        for (int i = 1; i <= 8; i++) {
             if (i == 7) {i++; goodTitlesCount++;}
             basePage.waitOneSeconds();
             basePage.footerButtonClick(i);
@@ -53,10 +53,9 @@ public class SugarDaddiesTest extends BaseTest {
             else { basePage.outputWrongTitle(); }
             basePage.back(SUGAR_DADDIES_PAGE_URL);
         }
-        assertEquals(NUMBER_OF_GOOD_FOOTER_BUTTONS, goodTitlesCount);
+        assertEquals(8, goodTitlesCount);
     }
 
-     */
 
     @Test
     public void mainLogoLinkTest () {
