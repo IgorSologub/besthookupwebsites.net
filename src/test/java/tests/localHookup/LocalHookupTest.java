@@ -77,7 +77,7 @@ public class LocalHookupTest extends BaseTest {
     public void loadMoreButtonTest () {
         basePage.waitOneSeconds();
         localHookupPage.loadMoreButtonClick();
-        basePage.waitOneSeconds();
+        basePage.waitFiveSeconds();
         localHookupPage.loadMoreButtonClick();
         basePage.waitFiveSeconds();
         assertTrue(localHookupPage.cityBlockCheck());
