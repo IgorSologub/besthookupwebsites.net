@@ -81,7 +81,10 @@ public class Constant {
                 "Together2night.com",
                 "hot girls",
                 "This Site Contains Photos of Beautiful Women",
-                "WeMeetToday.com"
+                "WeMeetToday.com",
+                "NaughtyDate",
+                "MeetWild",
+                "BigoFun"
         );
         public static final int NUMBER_OF_DOWNLOAD_APP_REG_BUTTONS = 5;
         public static final int NUMBER_OF_VISIT_SITE_REG_BUTTONS = 24;
