@@ -167,6 +167,9 @@ public class BasePage {
                 }
             }
         }
+        if (!titleStatus) {
+            outputWrongTitle();
+        }
         return titleStatus;
     }
 

@@ -89,6 +89,7 @@ public class SugarDaddiesTest extends BaseTest {
             basePage.nextTab();
             basePage.waitOneMinute();
             if (basePage.checkTitles(REG_TITLES)) { goodTitlesCount++; }
+            else { basePage.outputWrongTitle(); }
             basePage.waitOneSeconds();
             basePage.closeTabAndMoveToNext();
         }

@@ -79,7 +79,9 @@ public class Constant {
                 "Together2Night",
                 "localcrush.co.uk",
                 "Together2night.com",
-                "hot girls"
+                "hot girls",
+                "This Site Contains Photos of Beautiful Women",
+                "WeMeetToday.com"
         );
         public static final int NUMBER_OF_DOWNLOAD_APP_REG_BUTTONS = 5;
         public static final int NUMBER_OF_VISIT_SITE_REG_BUTTONS = 24;
