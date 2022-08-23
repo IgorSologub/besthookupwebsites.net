@@ -1,7 +1,8 @@
 package tests.blogCategory;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 import tests.base.BaseTest;
 
 import static constants.Constant.Footer.FOOTER_TITLES;
@@ -11,12 +12,12 @@ import static constants.Constant.Header.NUMBER_OF_GOOD_HEADER_BUTTONS;
 import static constants.Constant.Reviews.*;
 import static constants.Constant.Urls.BLOG_CATEGORY_URL;
 import static constants.Constant.Urls.MAIN_PAGE_URL;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.testng.Assert.assertEquals;
+
 
 public class BlogCategoryTest extends BaseTest {
 
-    @BeforeEach
+    @BeforeMethod
     public void setUp () {
         startDriver("reviewCategory");
         basePage.goToUrl(BLOG_CATEGORY_URL);
@@ -24,7 +25,7 @@ public class BlogCategoryTest extends BaseTest {
         basePage.closePopup();
     }
 
-    @Test
+    @Test(invocationCount = 3)
     public void headerButtonsTest () {
         int goodTitlesCount = 0;
         for (int i = 1; i <= NUMBER_OF_GOOD_HEADER_BUTTONS; i++) {
@@ -39,7 +40,7 @@ public class BlogCategoryTest extends BaseTest {
         assertEquals(NUMBER_OF_GOOD_HEADER_BUTTONS, goodTitlesCount);
     }
 
-    @Test
+    @Test(invocationCount = 3)
     public void footerButtonsTest () {
         int goodTitlesCount = 0;
         for (int i = 1; i <= NUMBER_OF_GOOD_FOOTER_BUTTONS; i++) {
@@ -54,14 +55,14 @@ public class BlogCategoryTest extends BaseTest {
         assertEquals(NUMBER_OF_GOOD_FOOTER_BUTTONS, goodTitlesCount);
     }
 
-    @Test
+    @Test(invocationCount = 3)
     public void mainLogoLinkTest () {
         basePage.mainLogoButtonClick();
         basePage.waitOneSeconds();
         assertEquals(MAIN_PAGE_URL, basePage.getCurrentUrl());
     }
 
-    @Test
+    @Test(invocationCount = 3)
     public void blogPostTest () {
         int goodTitlesCount = 0;
         for (int i = 1; i <= NUMBER_OF_BLOG_POST_BUTTONS_BLOG_CATEGORY; i++) {
@@ -75,7 +76,7 @@ public class BlogCategoryTest extends BaseTest {
         assertEquals(NUMBER_OF_BLOG_POST_BUTTONS_BLOG_CATEGORY, goodTitlesCount);
     }
 
-    @Test
+    @Test(invocationCount = 3)
     public void topPostBlogButtonTest () {
         int goodUrlsCount = 0;
         for (int i = 1; i <= NUMBER_OF_TOP_POST_BLOG_BUTTONS_BLOG_CATEGORY; i++) {
@@ -89,7 +90,7 @@ public class BlogCategoryTest extends BaseTest {
         assertEquals(NUMBER_OF_TOP_POST_BLOG_BUTTONS_BLOG_CATEGORY, goodUrlsCount);
     }
 
-    @Test
+    @Test(invocationCount = 3)
     public void topPostButtonTest () {
         int goodTitlesCount = 0;
         for (int i = 1; i <= NUMBER_OF_TOP_POST_BUTTONS_BLOG_CATEGORY; i++) {

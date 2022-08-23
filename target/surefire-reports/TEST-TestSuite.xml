@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="7,445.059" tests="127" errors="0" skipped="66" failures="11">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.class.path" value="D:\Java\Projects\BestHookupWebsitesNet\target\test-classes;D:\Java\Projects\BestHookupWebsitesNet\target\classes;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-java\4.1.4\selenium-java-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-api\4.1.4\selenium-api-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.1.4\selenium-chrome-driver-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\Gyrocopter_UA\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\Gyrocopter_UA\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\Gyrocopter_UA\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\Gyrocopter_UA\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Gyrocopter_UA\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\Gyrocopter_UA\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\Gyrocopter_UA\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.1.4\selenium-chromium-driver-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-json\4.1.4\selenium-json-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v100\4.1.4\selenium-devtools-v100-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v101\4.1.4\selenium-devtools-v101-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.1.4\selenium-devtools-v85-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v99\4.1.4\selenium-devtools-v99-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.1.4\selenium-edge-driver-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.1.4\selenium-firefox-driver-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.1.4\selenium-ie-driver-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.1.4\selenium-opera-driver-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.1.4\selenium-remote-driver-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-buffer\4.1.76.Final\netty-buffer-4.1.76.Final.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-codec-http\4.1.76.Final\netty-codec-http-4.1.76.Final.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-codec\4.1.76.Final\netty-codec-4.1.76.Final.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-handler\4.1.76.Final\netty-handler-4.1.76.Final.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-common\4.1.76.Final\netty-common-4.1.76.Final.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.76.Final\netty-transport-classes-epoll-4.1.76.Final.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.76.Final\netty-transport-classes-kqueue-4.1.76.Final.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-transport-native-epoll\4.1.76.Final\netty-transport-native-epoll-4.1.76.Final.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.76.Final\netty-transport-native-kqueue-4.1.76.Final.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.76.Final\netty-transport-native-unix-common-4.1.76.Final.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-transport\4.1.76.Final\netty-transport-4.1.76.Final.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-resolver\4.1.76.Final\netty-resolver-4.1.76.Final.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\opentelemetry\opentelemetry-api\1.13.0\opentelemetry-api-1.13.0.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\opentelemetry\opentelemetry-context\1.13.0\opentelemetry-context-1.13.0.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.13.0\opentelemetry-exporter-logging-1.13.0.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.13.0-alpha\opentelemetry-sdk-metrics-1.13.0-alpha.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.13.0-alpha\opentelemetry-sdk-logs-1.13.0-alpha.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.13.0\opentelemetry-sdk-common-1.13.0.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.13.0\opentelemetry-sdk-extension-autoconfigure-spi-1.13.0.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.13.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.13.0-alpha.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.13.0\opentelemetry-sdk-trace-1.13.0.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.13.0\opentelemetry-sdk-1.13.0.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.13.0-alpha\opentelemetry-semconv-1.13.0-alpha.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\Gyrocopter_UA\.m2\repository\net\bytebuddy\byte-buddy\1.12.9\byte-buddy-1.12.9.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Gyrocopter_UA\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-http\4.1.4\selenium-http-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\dev\failsafe\failsafe\3.2.3\failsafe-3.2.3.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.1.4\selenium-safari-driver-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-support\4.1.4\selenium-support-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\qameta\allure\allure-testng\2.13.9\allure-testng-2.13.9.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\qameta\allure\allure-java-commons\2.13.9\allure-java-commons-2.13.9.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\qameta\allure\allure-model\2.13.9\allure-model-2.13.9.jar;C:\Users\Gyrocopter_UA\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.2\jackson-databind-2.12.2.jar;C:\Users\Gyrocopter_UA\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.2\jackson-annotations-2.12.2.jar;C:\Users\Gyrocopter_UA\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.2\jackson-core-2.12.2.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\apache\tika\tika-core\1.25\tika-core-1.25.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\jooq\joor-java-8\0.9.13\joor-java-8-0.9.13.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\qameta\allure\allure-test-filter\2.13.9\allure-test-filter-2.13.9.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\testng\testng\7.6.0\testng-7.6.0.jar;C:\Users\Gyrocopter_UA\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Gyrocopter_UA\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\webjars\jquery\3.6.0\jquery-3.6.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="Europe/Helsinki"/>
+    <property name="user.country.format" value="UA"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.15.1\bin"/>
+    <property name="sun.java.command" value="C:\Users\GYROCO~1\AppData\Local\Temp\surefire11539417603086507108\surefirebooter5869153824290334446.jar C:\Users\Gyrocopter_UA\AppData\Local\Temp\surefire11539417603086507108 2022-08-23T14-22-12_148-jvmRun1 surefire8993785196777604719tmp surefire_07467381327089715852tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\Java\Projects\BestHookupWebsitesNet\target\test-classes;D:\Java\Projects\BestHookupWebsitesNet\target\classes;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-java\4.1.4\selenium-java-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-api\4.1.4\selenium-api-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.1.4\selenium-chrome-driver-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\Gyrocopter_UA\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\Gyrocopter_UA\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\Gyrocopter_UA\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\Gyrocopter_UA\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Gyrocopter_UA\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\Gyrocopter_UA\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\Gyrocopter_UA\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.1.4\selenium-chromium-driver-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-json\4.1.4\selenium-json-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v100\4.1.4\selenium-devtools-v100-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v101\4.1.4\selenium-devtools-v101-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.1.4\selenium-devtools-v85-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v99\4.1.4\selenium-devtools-v99-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.1.4\selenium-edge-driver-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.1.4\selenium-firefox-driver-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.1.4\selenium-ie-driver-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.1.4\selenium-opera-driver-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.1.4\selenium-remote-driver-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-buffer\4.1.76.Final\netty-buffer-4.1.76.Final.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-codec-http\4.1.76.Final\netty-codec-http-4.1.76.Final.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-codec\4.1.76.Final\netty-codec-4.1.76.Final.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-handler\4.1.76.Final\netty-handler-4.1.76.Final.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-common\4.1.76.Final\netty-common-4.1.76.Final.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.76.Final\netty-transport-classes-epoll-4.1.76.Final.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.76.Final\netty-transport-classes-kqueue-4.1.76.Final.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-transport-native-epoll\4.1.76.Final\netty-transport-native-epoll-4.1.76.Final.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.76.Final\netty-transport-native-kqueue-4.1.76.Final.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.76.Final\netty-transport-native-unix-common-4.1.76.Final.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-transport\4.1.76.Final\netty-transport-4.1.76.Final.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-resolver\4.1.76.Final\netty-resolver-4.1.76.Final.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\opentelemetry\opentelemetry-api\1.13.0\opentelemetry-api-1.13.0.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\opentelemetry\opentelemetry-context\1.13.0\opentelemetry-context-1.13.0.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.13.0\opentelemetry-exporter-logging-1.13.0.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.13.0-alpha\opentelemetry-sdk-metrics-1.13.0-alpha.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.13.0-alpha\opentelemetry-sdk-logs-1.13.0-alpha.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.13.0\opentelemetry-sdk-common-1.13.0.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.13.0\opentelemetry-sdk-extension-autoconfigure-spi-1.13.0.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.13.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.13.0-alpha.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.13.0\opentelemetry-sdk-trace-1.13.0.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.13.0\opentelemetry-sdk-1.13.0.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.13.0-alpha\opentelemetry-semconv-1.13.0-alpha.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\Gyrocopter_UA\.m2\repository\net\bytebuddy\byte-buddy\1.12.9\byte-buddy-1.12.9.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Gyrocopter_UA\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-http\4.1.4\selenium-http-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\dev\failsafe\failsafe\3.2.3\failsafe-3.2.3.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.1.4\selenium-safari-driver-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\seleniumhq\selenium\selenium-support\4.1.4\selenium-support-4.1.4.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\qameta\allure\allure-testng\2.13.9\allure-testng-2.13.9.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\qameta\allure\allure-java-commons\2.13.9\allure-java-commons-2.13.9.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\qameta\allure\allure-model\2.13.9\allure-model-2.13.9.jar;C:\Users\Gyrocopter_UA\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.2\jackson-databind-2.12.2.jar;C:\Users\Gyrocopter_UA\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.2\jackson-annotations-2.12.2.jar;C:\Users\Gyrocopter_UA\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.2\jackson-core-2.12.2.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\apache\tika\tika-core\1.25\tika-core-1.25.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\jooq\joor-java-8\0.9.13\joor-java-8-0.9.13.jar;C:\Users\Gyrocopter_UA\.m2\repository\io\qameta\allure\allure-test-filter\2.13.9\allure-test-filter-2.13.9.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\testng\testng\7.6.0\testng-7.6.0.jar;C:\Users\Gyrocopter_UA\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Gyrocopter_UA\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Gyrocopter_UA\.m2\repository\org\webjars\jquery\3.6.0\jquery-3.6.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Gyrocopter_UA"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-04-22"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.15.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\Java\Projects\BestHookupWebsitesNet"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\GYROCO~1\AppData\Local\Temp\surefire11539417603086507108\surefirebooter5869153824290334446.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.15.1+2-LTS-10"/>
+    <property name="user.name" value="Gyrocopter_UA"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="C:\Users\Gyrocopter_UA\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\GYROCO~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.15.1"/>
+    <property name="user.dir" value="D:\Java\Projects\BestHookupWebsitesNet"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.15.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Java\apache-maven-3.8.4\bin;C:\Program Files\Java\jdk-11.0.15.1\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Users\Gyrocopter_UA\AppData\Local\Microsoft\WindowsApps;D:\Java\IntelliJ IDEA 2021.3.2\bin;;C:\Program Files\Java\jdk-11.0.15.1\bin;;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.15.1+2-LTS-10"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="authorButtonTest" classname="tests.blog.BlogTest" time="5.563"/>
+  <testcase name="footerButtonsTest" classname="tests.blog.BlogTest" time="61.685"/>
+  <testcase name="headerButtonsTest" classname="tests.blog.BlogTest" time="10.148"/>
+  <testcase name="mainLogoLinkTest" classname="tests.blog.BlogTest" time="1.548"/>
+  <testcase name="nextSliderButtonTest" classname="tests.blog.BlogTest" time="3.206"/>
+  <testcase name="successfulCommentFormTest" classname="tests.blog.BlogTest" time="6.368"/>
+  <testcase name="topPostBlogButtonTest" classname="tests.blog.BlogTest" time="9.613"/>
+  <testcase name="topPostButtonTest" classname="tests.blog.BlogTest" time="9.981"/>
+  <testcase name="unsuccessfulCommentFormTest" classname="tests.blog.BlogTest" time="6.295"/>
+  <testcase name="blogPostTest" classname="tests.blogCategory.BlogCategoryTest" time="57.987"/>
+  <testcase name="footerButtonsTest" classname="tests.blogCategory.BlogCategoryTest" time="61.821"/>
+  <testcase name="headerButtonsTest" classname="tests.blogCategory.BlogCategoryTest" time="10.107"/>
+  <testcase name="mainLogoLinkTest" classname="tests.blogCategory.BlogCategoryTest" time="1.512"/>
+  <testcase name="topPostBlogButtonTest" classname="tests.blogCategory.BlogCategoryTest" time="11.713"/>
+  <testcase name="topPostButtonTest" classname="tests.blogCategory.BlogCategoryTest" time="11.984"/>
+  <testcase name="footerButtonsTest" classname="tests.contactUs.ContactUsTest" time="61.302"/>
+  <testcase name="headerButtonsTest" classname="tests.contactUs.ContactUsTest" time="10.263"/>
+  <testcase name="mainLogoLinkTest" classname="tests.contactUs.ContactUsTest" time="1.558"/>
+  <testcase name="cityButtonTest" classname="tests.escort.EscortTest" time="2.022"/>
+  <testcase name="footerButtonsTest" classname="tests.escort.EscortTest" time="61.777"/>
+  <testcase name="headerButtonsTest" classname="tests.escort.EscortTest" time="10.445"/>
+  <testcase name="inputCitySearchTest" classname="tests.escort.EscortTest" time="15.185"/>
+  <testcase name="mainLogoLinkTest" classname="tests.escort.EscortTest" time="1.653"/>
+  <testcase name="articlesButtonTest" classname="tests.localHookup.LocalHookupTest" time="50.274"/>
+  <testcase name="authorButtonTest" classname="tests.localHookup.LocalHookupTest" time="6.475"/>
+  <testcase name="blogSliderTest" classname="tests.localHookup.LocalHookupTest" time="3.326"/>
+  <testcase name="faqCollapseButtonTest" classname="tests.localHookup.LocalHookupTest" time="6.174"/>
+  <testcase name="footerButtonsTest" classname="tests.localHookup.LocalHookupTest" time="62.169"/>
+  <testcase name="headerButtonsTest" classname="tests.localHookup.LocalHookupTest" time="10.325"/>
+  <testcase name="latestNewsButtonTest" classname="tests.localHookup.LocalHookupTest" time="12.712"/>
+  <testcase name="learnMoreButtonTest" classname="tests.localHookup.LocalHookupTest" time="121.543">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at tests.localHookup.LocalHookupTest.learnMoreButtonTest(LocalHookupTest.java:73)
+</failure>
+    <system-out><![CDATA[singlesgetmatched.com
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 58684
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+авг. 23, 2022 2:50:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+авг. 23, 2022 2:50:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 104, so returning the closest version found: 101
+авг. 23, 2022 2:50:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 104 of 101
+]]></system-err>
+  </testcase>
+  <testcase name="clearCookiesAndExit" classname="tests.localHookup.LocalHookupTest" time="121.573">
+    <failure message="&lt;unknown&gt;: Failed to read the &apos;sessionStorage&apos; property from &apos;Window&apos;: Access is denied for this document.&#10;  (Session info: chrome=104.0.5112.82)&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;IGOR&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [416825e23f805af5a95591d18447406f, executeScript {script=window.sessionStorage.clear(), args=[]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56010}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56010/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 416825e23f805af5a95591d18447406f" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
+<unknown>: Failed to read the 'sessionStorage' property from 'Window': Access is denied for this document.
+  (Session info: chrome=104.0.5112.82)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'IGOR', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [416825e23f805af5a95591d18447406f, executeScript {script=window.sessionStorage.clear(), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56010}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56010/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 416825e23f805af5a95591d18447406f
+]]></failure>
+  </testcase>
+  <testcase name="clearCookiesAndExit" classname="tests.localHookup.LocalHookupTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="clearCookiesAndExit" classname="tests.localHookup.LocalHookupTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="clearCookiesAndExit" classname="tests.localHookup.LocalHookupTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="clearCookiesAndExit" classname="tests.localHookup.LocalHookupTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="clearCookiesAndExit" classname="tests.localHookup.LocalHookupTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="clearCookiesAndExit" classname="tests.localHookup.LocalHookupTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="clearCookiesAndExit" classname="tests.localHookup.LocalHookupTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="tests.localHookup.LocalHookupTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="tests.localHookup.LocalHookupTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="tests.localHookup.LocalHookupTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="tests.localHookup.LocalHookupTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="tests.localHookup.LocalHookupTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="tests.localHookup.LocalHookupTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="tests.localHookup.LocalHookupTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="loadMoreButtonTest" classname="tests.localHookup.LocalHookupTest" time="0">
+    <skipped message="&lt;unknown&gt;: Failed to read the &apos;sessionStorage&apos; property from &apos;Window&apos;: Access is denied for this document.&#10;  (Session info: chrome=104.0.5112.82)&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;IGOR&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [416825e23f805af5a95591d18447406f, executeScript {script=window.sessionStorage.clear(), args=[]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56010}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56010/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 416825e23f805af5a95591d18447406f"/>
+  </testcase>
+  <testcase name="loadMoreReviewButtonTest" classname="tests.localHookup.LocalHookupTest" time="0">
+    <skipped message="&lt;unknown&gt;: Failed to read the &apos;sessionStorage&apos; property from &apos;Window&apos;: Access is denied for this document.&#10;  (Session info: chrome=104.0.5112.82)&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;IGOR&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [416825e23f805af5a95591d18447406f, executeScript {script=window.sessionStorage.clear(), args=[]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56010}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56010/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 416825e23f805af5a95591d18447406f"/>
+  </testcase>
+  <testcase name="mainLogoLinkTest" classname="tests.localHookup.LocalHookupTest" time="0">
+    <skipped message="&lt;unknown&gt;: Failed to read the &apos;sessionStorage&apos; property from &apos;Window&apos;: Access is denied for this document.&#10;  (Session info: chrome=104.0.5112.82)&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;IGOR&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [416825e23f805af5a95591d18447406f, executeScript {script=window.sessionStorage.clear(), args=[]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56010}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56010/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 416825e23f805af5a95591d18447406f"/>
+  </testcase>
+  <testcase name="readFullReviewButtonTest" classname="tests.localHookup.LocalHookupTest" time="0">
+    <skipped message="&lt;unknown&gt;: Failed to read the &apos;sessionStorage&apos; property from &apos;Window&apos;: Access is denied for this document.&#10;  (Session info: chrome=104.0.5112.82)&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;IGOR&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [416825e23f805af5a95591d18447406f, executeScript {script=window.sessionStorage.clear(), args=[]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56010}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56010/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 416825e23f805af5a95591d18447406f"/>
+  </testcase>
+  <testcase name="readReviewButtonTest" classname="tests.localHookup.LocalHookupTest" time="0">
+    <skipped message="&lt;unknown&gt;: Failed to read the &apos;sessionStorage&apos; property from &apos;Window&apos;: Access is denied for this document.&#10;  (Session info: chrome=104.0.5112.82)&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;IGOR&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [416825e23f805af5a95591d18447406f, executeScript {script=window.sessionStorage.clear(), args=[]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56010}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56010/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 416825e23f805af5a95591d18447406f"/>
+  </testcase>
+  <testcase name="visitSiteButtonTest" classname="tests.localHookup.LocalHookupTest" time="0">
+    <skipped message="&lt;unknown&gt;: Failed to read the &apos;sessionStorage&apos; property from &apos;Window&apos;: Access is denied for this document.&#10;  (Session info: chrome=104.0.5112.82)&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;IGOR&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [416825e23f805af5a95591d18447406f, executeScript {script=window.sessionStorage.clear(), args=[]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56010}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56010/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 416825e23f805af5a95591d18447406f"/>
+  </testcase>
+  <testcase name="visitSiteInTextButtonTest" classname="tests.localHookup.LocalHookupTest" time="0">
+    <skipped message="&lt;unknown&gt;: Failed to read the &apos;sessionStorage&apos; property from &apos;Window&apos;: Access is denied for this document.&#10;  (Session info: chrome=104.0.5112.82)&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;IGOR&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [416825e23f805af5a95591d18447406f, executeScript {script=window.sessionStorage.clear(), args=[]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56010}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56010/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 416825e23f805af5a95591d18447406f"/>
+  </testcase>
+  <testcase name="blogSliderTest" classname="tests.main.MainTest" time="2.136"/>
+  <testcase name="changeLanguageButtonTest" classname="tests.main.MainTest" time="46.378"/>
+  <testcase name="downloadAppRegButtonTest" classname="tests.main.MainTest" time="612.884">
+    <failure message="expected [0] but found [5]" type="java.lang.AssertionError">java.lang.AssertionError: expected [0] but found [5]
+	at tests.main.MainTest.downloadAppRegButtonTest(MainTest.java:105)
+</failure>
+    <system-out><![CDATA[singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 56299
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+авг. 23, 2022 2:54:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+авг. 23, 2022 2:54:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 104, so returning the closest version found: 101
+авг. 23, 2022 2:54:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 104 of 101
+]]></system-err>
+  </testcase>
+  <testcase name="faqButtonTest" classname="tests.main.MainTest" time="4.261"/>
+  <testcase name="footerButtonsTest" classname="tests.main.MainTest" time="62.248"/>
+  <testcase name="headerButtonsTest" classname="tests.main.MainTest" time="10.573"/>
+  <testcase name="learnMoreRegButtonTest" classname="tests.main.MainTest" time="120.499">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at tests.main.MainTest.learnMoreRegButtonTest(MainTest.java:89)
+</failure>
+    <system-out><![CDATA[singlesgetmatched.com
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 51529
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+авг. 23, 2022 3:08:39 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+авг. 23, 2022 3:08:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 104, so returning the closest version found: 101
+авг. 23, 2022 3:08:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 104 of 101
+]]></system-err>
+  </testcase>
+  <testcase name="clearCookiesAndExit" classname="tests.main.MainTest" time="120.514">
+    <failure message="&lt;unknown&gt;: Failed to read the &apos;sessionStorage&apos; property from &apos;Window&apos;: Access is denied for this document.&#10;  (Session info: chrome=104.0.5112.82)&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;IGOR&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [0d9e1053b4bb223e43038a387afcf974, executeScript {script=window.sessionStorage.clear(), args=[]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57959}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57959/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0d9e1053b4bb223e43038a387afcf974" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
+<unknown>: Failed to read the 'sessionStorage' property from 'Window': Access is denied for this document.
+  (Session info: chrome=104.0.5112.82)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'IGOR', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0d9e1053b4bb223e43038a387afcf974, executeScript {script=window.sessionStorage.clear(), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57959}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57959/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d9e1053b4bb223e43038a387afcf974
+]]></failure>
+  </testcase>
+  <testcase name="clearCookiesAndExit" classname="tests.main.MainTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="clearCookiesAndExit" classname="tests.main.MainTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="clearCookiesAndExit" classname="tests.main.MainTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="clearCookiesAndExit" classname="tests.main.MainTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="tests.main.MainTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="tests.main.MainTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="tests.main.MainTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="tests.main.MainTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="loadMoreButtonTest" classname="tests.main.MainTest" time="0">
+    <skipped message="&lt;unknown&gt;: Failed to read the &apos;sessionStorage&apos; property from &apos;Window&apos;: Access is denied for this document.&#10;  (Session info: chrome=104.0.5112.82)&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;IGOR&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [0d9e1053b4bb223e43038a387afcf974, executeScript {script=window.sessionStorage.clear(), args=[]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57959}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57959/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0d9e1053b4bb223e43038a387afcf974"/>
+  </testcase>
+  <testcase name="mainLogoLinkTest" classname="tests.main.MainTest" time="0">
+    <skipped message="&lt;unknown&gt;: Failed to read the &apos;sessionStorage&apos; property from &apos;Window&apos;: Access is denied for this document.&#10;  (Session info: chrome=104.0.5112.82)&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;IGOR&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [0d9e1053b4bb223e43038a387afcf974, executeScript {script=window.sessionStorage.clear(), args=[]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57959}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57959/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0d9e1053b4bb223e43038a387afcf974"/>
+  </testcase>
+  <testcase name="readArticleButtonTest" classname="tests.main.MainTest" time="0">
+    <skipped message="&lt;unknown&gt;: Failed to read the &apos;sessionStorage&apos; property from &apos;Window&apos;: Access is denied for this document.&#10;  (Session info: chrome=104.0.5112.82)&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;IGOR&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [0d9e1053b4bb223e43038a387afcf974, executeScript {script=window.sessionStorage.clear(), args=[]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57959}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57959/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0d9e1053b4bb223e43038a387afcf974"/>
+  </testcase>
+  <testcase name="readReviewButtonTest" classname="tests.main.MainTest" time="0">
+    <skipped message="&lt;unknown&gt;: Failed to read the &apos;sessionStorage&apos; property from &apos;Window&apos;: Access is denied for this document.&#10;  (Session info: chrome=104.0.5112.82)&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;IGOR&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [0d9e1053b4bb223e43038a387afcf974, executeScript {script=window.sessionStorage.clear(), args=[]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57959}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57959/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0d9e1053b4bb223e43038a387afcf974"/>
+  </testcase>
+  <testcase name="footerButtonsTest" classname="tests.review.ReviewTest" time="62.657"/>
+  <testcase name="headerButtonsTest" classname="tests.review.ReviewTest" time="10.196"/>
+  <testcase name="latestReviewsButtonTest" classname="tests.review.ReviewTest" time="12.285"/>
+  <testcase name="mainLogoLinkTest" classname="tests.review.ReviewTest" time="1.488"/>
+  <testcase name="nextSliderButtonTest" classname="tests.review.ReviewTest" time="3.273"/>
+  <testcase name="pictureRegButtonsTest" classname="tests.review.ReviewTest" time="367.562">
+    <failure message="expected [0] but found [3]" type="java.lang.AssertionError">java.lang.AssertionError: expected [0] but found [3]
+	at tests.review.ReviewTest.pictureRegButtonsTest(ReviewTest.java:88)
+</failure>
+    <system-out><![CDATA[singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 55296
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+авг. 23, 2022 3:15:38 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+авг. 23, 2022 3:15:38 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 104, so returning the closest version found: 101
+авг. 23, 2022 3:15:38 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 104 of 101
+]]></system-err>
+  </testcase>
+  <testcase name="startButtonTest" classname="tests.review.ReviewTest" time="2.614"/>
+  <testcase name="successfulCommentFormTest" classname="tests.review.ReviewTest" time="6.345"/>
+  <testcase name="typesOfRelationshipsButtonTest" classname="tests.review.ReviewTest" time="5.108"/>
+  <testcase name="unsuccessfulCommentFormTest" classname="tests.review.ReviewTest" time="6.309"/>
+  <testcase name="visitSiteRegButtonTest" classname="tests.review.ReviewTest" time="120.533">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at tests.review.ReviewTest.visitSiteRegButtonTest(ReviewTest.java:72)
+</failure>
+    <system-out><![CDATA[singlesgetmatched.com
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 56009
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+авг. 23, 2022 3:25:05 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+авг. 23, 2022 3:25:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 104, so returning the closest version found: 101
+авг. 23, 2022 3:25:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 104 of 101
+]]></system-err>
+  </testcase>
+  <testcase name="clearCookiesAndExit" classname="tests.review.ReviewTest" time="120.545">
+    <failure message="&lt;unknown&gt;: Failed to read the &apos;sessionStorage&apos; property from &apos;Window&apos;: Access is denied for this document.&#10;  (Session info: chrome=104.0.5112.82)&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;IGOR&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [e8c58f8c39d865a19932ccf4062654ca, executeScript {script=window.sessionStorage.clear(), args=[]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60095}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60095/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e8c58f8c39d865a19932ccf4062654ca" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
+<unknown>: Failed to read the 'sessionStorage' property from 'Window': Access is denied for this document.
+  (Session info: chrome=104.0.5112.82)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'IGOR', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e8c58f8c39d865a19932ccf4062654ca, executeScript {script=window.sessionStorage.clear(), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60095}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60095/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e8c58f8c39d865a19932ccf4062654ca
+]]></failure>
+  </testcase>
+  <testcase name="changeLanguageButtonTest" classname="tests.reviewCategory.ReviewCategoryTest" time="35.529"/>
+  <testcase name="footerButtonsTest" classname="tests.reviewCategory.ReviewCategoryTest" time="62.245"/>
+  <testcase name="headerButtonsTest" classname="tests.reviewCategory.ReviewCategoryTest" time="10.243"/>
+  <testcase name="mainLogoLinkTest" classname="tests.reviewCategory.ReviewCategoryTest" time="1.577"/>
+  <testcase name="paginationButtonTest" classname="tests.reviewCategory.ReviewCategoryTest" time="1.028"/>
+  <testcase name="readReviewButtonTest" classname="tests.reviewCategory.ReviewCategoryTest" time="58.411"/>
+  <testcase name="visitSiteRegButtonTest" classname="tests.reviewCategory.ReviewCategoryTest" time="2,942.462">
+    <failure message="expected [0] but found [24]" type="java.lang.AssertionError">java.lang.AssertionError: expected [0] but found [24]
+	at tests.reviewCategory.ReviewCategoryTest.visitSiteRegButtonTest(ReviewCategoryTest.java:95)
+</failure>
+    <system-out><![CDATA[singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+singlesgetmatched.com
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 51686
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+авг. 23, 2022 3:34:05 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+авг. 23, 2022 3:34:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 104, so returning the closest version found: 101
+авг. 23, 2022 3:34:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 104 of 101
+]]></system-err>
+  </testcase>
+  <testcase name="addProfilesRegButtonTest" classname="tests.sugarDaddies.SugarDaddiesTest" time="121.514">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at tests.sugarDaddies.SugarDaddiesTest.addProfilesRegButtonTest(SugarDaddiesTest.java:131)
+</failure>
+    <system-out><![CDATA[singlesgetmatched.com
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 56217
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+авг. 23, 2022 4:23:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+авг. 23, 2022 4:23:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 104, so returning the closest version found: 101
+авг. 23, 2022 4:23:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 104 of 101
+]]></system-err>
+  </testcase>
+  <testcase name="clearCookiesAndExit" classname="tests.sugarDaddies.SugarDaddiesTest" time="121.528">
+    <failure message="&lt;unknown&gt;: Failed to read the &apos;sessionStorage&apos; property from &apos;Window&apos;: Access is denied for this document.&#10;  (Session info: chrome=104.0.5112.82)&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;IGOR&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [0ab8bc72d4fa9c0e700cab807a47dc7e, executeScript {script=window.sessionStorage.clear(), args=[]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62082}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62082/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0ab8bc72d4fa9c0e700cab807a47dc7e" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
+<unknown>: Failed to read the 'sessionStorage' property from 'Window': Access is denied for this document.
+  (Session info: chrome=104.0.5112.82)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'IGOR', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0ab8bc72d4fa9c0e700cab807a47dc7e, executeScript {script=window.sessionStorage.clear(), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62082}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62082/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0ab8bc72d4fa9c0e700cab807a47dc7e
+]]></failure>
+  </testcase>
+  <testcase name="clearCookiesAndExit" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="clearCookiesAndExit" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="clearCookiesAndExit" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="clearCookiesAndExit" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="clearCookiesAndExit" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="clearCookiesAndExit" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="clearCookiesAndExit" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="clearCookiesAndExit" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="clearCookiesAndExit" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="clearCookiesAndExit" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="clearCookiesAndExit" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="findSugarCityButtonTest" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped message="&lt;unknown&gt;: Failed to read the &apos;sessionStorage&apos; property from &apos;Window&apos;: Access is denied for this document.&#10;  (Session info: chrome=104.0.5112.82)&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;IGOR&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [0ab8bc72d4fa9c0e700cab807a47dc7e, executeScript {script=window.sessionStorage.clear(), args=[]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62082}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62082/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0ab8bc72d4fa9c0e700cab807a47dc7e"/>
+  </testcase>
+  <testcase name="footerButtonsTest" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped message="&lt;unknown&gt;: Failed to read the &apos;sessionStorage&apos; property from &apos;Window&apos;: Access is denied for this document.&#10;  (Session info: chrome=104.0.5112.82)&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;IGOR&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [0ab8bc72d4fa9c0e700cab807a47dc7e, executeScript {script=window.sessionStorage.clear(), args=[]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62082}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62082/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0ab8bc72d4fa9c0e700cab807a47dc7e"/>
+  </testcase>
+  <testcase name="headerButtonsTest" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped message="&lt;unknown&gt;: Failed to read the &apos;sessionStorage&apos; property from &apos;Window&apos;: Access is denied for this document.&#10;  (Session info: chrome=104.0.5112.82)&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;IGOR&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [0ab8bc72d4fa9c0e700cab807a47dc7e, executeScript {script=window.sessionStorage.clear(), args=[]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62082}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62082/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0ab8bc72d4fa9c0e700cab807a47dc7e"/>
+  </testcase>
+  <testcase name="loadMoreRegButtonTest" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped message="&lt;unknown&gt;: Failed to read the &apos;sessionStorage&apos; property from &apos;Window&apos;: Access is denied for this document.&#10;  (Session info: chrome=104.0.5112.82)&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;IGOR&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [0ab8bc72d4fa9c0e700cab807a47dc7e, executeScript {script=window.sessionStorage.clear(), args=[]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62082}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62082/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0ab8bc72d4fa9c0e700cab807a47dc7e"/>
+  </testcase>
+  <testcase name="mainLogoLinkTest" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped message="&lt;unknown&gt;: Failed to read the &apos;sessionStorage&apos; property from &apos;Window&apos;: Access is denied for this document.&#10;  (Session info: chrome=104.0.5112.82)&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;IGOR&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [0ab8bc72d4fa9c0e700cab807a47dc7e, executeScript {script=window.sessionStorage.clear(), args=[]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62082}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62082/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0ab8bc72d4fa9c0e700cab807a47dc7e"/>
+  </testcase>
+  <testcase name="readFullReviewButtonTest" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped message="&lt;unknown&gt;: Failed to read the &apos;sessionStorage&apos; property from &apos;Window&apos;: Access is denied for this document.&#10;  (Session info: chrome=104.0.5112.82)&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;IGOR&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [0ab8bc72d4fa9c0e700cab807a47dc7e, executeScript {script=window.sessionStorage.clear(), args=[]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62082}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62082/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0ab8bc72d4fa9c0e700cab807a47dc7e"/>
+  </testcase>
+  <testcase name="readReviewButtonTest" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped message="&lt;unknown&gt;: Failed to read the &apos;sessionStorage&apos; property from &apos;Window&apos;: Access is denied for this document.&#10;  (Session info: chrome=104.0.5112.82)&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;IGOR&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [0ab8bc72d4fa9c0e700cab807a47dc7e, executeScript {script=window.sessionStorage.clear(), args=[]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62082}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62082/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0ab8bc72d4fa9c0e700cab807a47dc7e"/>
+  </testcase>
+  <testcase name="sendMessageRegButtonTest" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped message="&lt;unknown&gt;: Failed to read the &apos;sessionStorage&apos; property from &apos;Window&apos;: Access is denied for this document.&#10;  (Session info: chrome=104.0.5112.82)&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;IGOR&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [0ab8bc72d4fa9c0e700cab807a47dc7e, executeScript {script=window.sessionStorage.clear(), args=[]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62082}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62082/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0ab8bc72d4fa9c0e700cab807a47dc7e"/>
+  </testcase>
+  <testcase name="startButtonTest" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped message="&lt;unknown&gt;: Failed to read the &apos;sessionStorage&apos; property from &apos;Window&apos;: Access is denied for this document.&#10;  (Session info: chrome=104.0.5112.82)&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;IGOR&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [0ab8bc72d4fa9c0e700cab807a47dc7e, executeScript {script=window.sessionStorage.clear(), args=[]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62082}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62082/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0ab8bc72d4fa9c0e700cab807a47dc7e"/>
+  </testcase>
+  <testcase name="visitSiteRegButtonInTopSitesForSugarDatingTest" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped message="&lt;unknown&gt;: Failed to read the &apos;sessionStorage&apos; property from &apos;Window&apos;: Access is denied for this document.&#10;  (Session info: chrome=104.0.5112.82)&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;IGOR&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [0ab8bc72d4fa9c0e700cab807a47dc7e, executeScript {script=window.sessionStorage.clear(), args=[]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62082}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62082/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0ab8bc72d4fa9c0e700cab807a47dc7e"/>
+  </testcase>
+  <testcase name="visitSiteRegButtonTest" classname="tests.sugarDaddies.SugarDaddiesTest" time="0">
+    <skipped message="&lt;unknown&gt;: Failed to read the &apos;sessionStorage&apos; property from &apos;Window&apos;: Access is denied for this document.&#10;  (Session info: chrome=104.0.5112.82)&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;IGOR&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [0ab8bc72d4fa9c0e700cab807a47dc7e, executeScript {script=window.sessionStorage.clear(), args=[]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62082}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62082/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0ab8bc72d4fa9c0e700cab807a47dc7e"/>
+  </testcase>
+</testsuite>

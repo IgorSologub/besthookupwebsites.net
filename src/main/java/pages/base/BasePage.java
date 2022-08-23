@@ -98,7 +98,7 @@ public class BasePage {
     }
 
     public BasePage closePopup () {
-        waitThirtySeconds();
+        waitTenSeconds();
         if(driver.findElement(closePopupsButton).isDisplayed()) {
             waitOneSeconds();
             driver.findElement(closePopupsButton).click();
@@ -106,7 +106,16 @@ public class BasePage {
         return this;
     }
 
-    public BasePage waitThirtySeconds () {
+    public BasePage waitTenSeconds() {
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return this;
+    }
+
+    public BasePage waitThirtySeconds() {
         try {
             Thread.sleep(30000);
         } catch (InterruptedException e) {
@@ -115,18 +124,9 @@ public class BasePage {
         return this;
     }
 
-    public BasePage waitOneMinute() {
+    public BasePage waitFiveSeconds() {
         try {
-            Thread.sleep(60000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        return this;
-    }
-
-    public BasePage waitFiveSeconds () {
-        try {
-            Thread.sleep(5000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -159,7 +159,7 @@ public class BasePage {
         }
         if (!titleStatus) {
             refreshPage();
-            waitOneMinute();
+            waitThirtySeconds();
             for (String title : typeOfTitles) {
                 if (driver.getTitle().contains(title)) {
                     titleStatus = true;
@@ -183,7 +183,7 @@ public class BasePage {
         }
         if (!urlStatus) {
             refreshPage();
-            waitOneMinute();
+            waitThirtySeconds();
             for (String title : typeOfUrls) {
                 if (driver.getTitle().contains(title)) {
                     urlStatus = true;

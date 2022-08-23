@@ -1,0 +1,76 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 127, Failures: 11, Errors: 0, Skipped: 66, Time elapsed: 7,445.059 s <<< FAILURE! - in TestSuite
+learnMoreButtonTest(tests.localHookup.LocalHookupTest)  Time elapsed: 121.543 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at tests.localHookup.LocalHookupTest.learnMoreButtonTest(LocalHookupTest.java:73)
+
+clearCookiesAndExit(tests.localHookup.LocalHookupTest)  Time elapsed: 121.573 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+<unknown>: Failed to read the 'sessionStorage' property from 'Window': Access is denied for this document.
+  (Session info: chrome=104.0.5112.82)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'IGOR', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [416825e23f805af5a95591d18447406f, executeScript {script=window.sessionStorage.clear(), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56010}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56010/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 416825e23f805af5a95591d18447406f
+
+downloadAppRegButtonTest(tests.main.MainTest)  Time elapsed: 612.884 s  <<< FAILURE!
+java.lang.AssertionError: expected [0] but found [5]
+	at tests.main.MainTest.downloadAppRegButtonTest(MainTest.java:105)
+
+learnMoreRegButtonTest(tests.main.MainTest)  Time elapsed: 120.499 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at tests.main.MainTest.learnMoreRegButtonTest(MainTest.java:89)
+
+clearCookiesAndExit(tests.main.MainTest)  Time elapsed: 120.514 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+<unknown>: Failed to read the 'sessionStorage' property from 'Window': Access is denied for this document.
+  (Session info: chrome=104.0.5112.82)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'IGOR', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0d9e1053b4bb223e43038a387afcf974, executeScript {script=window.sessionStorage.clear(), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57959}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57959/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d9e1053b4bb223e43038a387afcf974
+
+pictureRegButtonsTest(tests.review.ReviewTest)  Time elapsed: 367.562 s  <<< FAILURE!
+java.lang.AssertionError: expected [0] but found [3]
+	at tests.review.ReviewTest.pictureRegButtonsTest(ReviewTest.java:88)
+
+visitSiteRegButtonTest(tests.review.ReviewTest)  Time elapsed: 120.533 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at tests.review.ReviewTest.visitSiteRegButtonTest(ReviewTest.java:72)
+
+clearCookiesAndExit(tests.review.ReviewTest)  Time elapsed: 120.545 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+<unknown>: Failed to read the 'sessionStorage' property from 'Window': Access is denied for this document.
+  (Session info: chrome=104.0.5112.82)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'IGOR', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e8c58f8c39d865a19932ccf4062654ca, executeScript {script=window.sessionStorage.clear(), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60095}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60095/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e8c58f8c39d865a19932ccf4062654ca
+
+visitSiteRegButtonTest(tests.reviewCategory.ReviewCategoryTest)  Time elapsed: 2,942.462 s  <<< FAILURE!
+java.lang.AssertionError: expected [0] but found [24]
+	at tests.reviewCategory.ReviewCategoryTest.visitSiteRegButtonTest(ReviewCategoryTest.java:95)
+
+addProfilesRegButtonTest(tests.sugarDaddies.SugarDaddiesTest)  Time elapsed: 121.514 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at tests.sugarDaddies.SugarDaddiesTest.addProfilesRegButtonTest(SugarDaddiesTest.java:131)
+
+clearCookiesAndExit(tests.sugarDaddies.SugarDaddiesTest)  Time elapsed: 121.528 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+<unknown>: Failed to read the 'sessionStorage' property from 'Window': Access is denied for this document.
+  (Session info: chrome=104.0.5112.82)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'IGOR', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0ab8bc72d4fa9c0e700cab807a47dc7e, executeScript {script=window.sessionStorage.clear(), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\GYROCO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62082}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62082/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0ab8bc72d4fa9c0e700cab807a47dc7e
+

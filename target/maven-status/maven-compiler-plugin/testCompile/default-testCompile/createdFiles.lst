@@ -1,0 +1,10 @@
+tests\blog\BlogTest.class
+tests\blogCategory\BlogCategoryTest.class
+tests\escort\EscortTest.class
+tests\base\BaseTest.class
+tests\main\MainTest.class
+tests\sugarDaddies\SugarDaddiesTest.class
+tests\contactUs\ContactUsTest.class
+tests\reviewCategory\ReviewCategoryTest.class
+tests\localHookup\LocalHookupTest.class
+tests\review\ReviewTest.class

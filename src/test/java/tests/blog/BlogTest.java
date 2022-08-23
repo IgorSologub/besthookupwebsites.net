@@ -1,7 +1,8 @@
 package tests.blog;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 import tests.base.BaseTest;
 
 import static constants.Constant.CommentForm.*;
@@ -11,12 +12,13 @@ import static constants.Constant.Header.HEADER_TITLES;
 import static constants.Constant.Header.NUMBER_OF_GOOD_HEADER_BUTTONS;
 import static constants.Constant.Reviews.*;
 import static constants.Constant.Urls.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
 
 public class BlogTest extends BaseTest {
 
-    @BeforeEach
+    @BeforeMethod
     public void setUp () {
         startDriver("blog");
         basePage.goToUrl(BLOG_PAGE_URL);
@@ -24,7 +26,7 @@ public class BlogTest extends BaseTest {
         basePage.closePopup();
     }
 
-    @Test
+    @Test(invocationCount = 3)
     public void headerButtonsTest () {
         int goodTitlesCount = 0;
         for (int i = 1; i <= NUMBER_OF_GOOD_HEADER_BUTTONS; i++) {
@@ -39,7 +41,7 @@ public class BlogTest extends BaseTest {
         assertEquals(NUMBER_OF_GOOD_HEADER_BUTTONS, goodTitlesCount);
     }
 
-    @Test
+    @Test(invocationCount = 3)
     public void footerButtonsTest () {
         int goodTitlesCount = 0;
         for (int i = 1; i <= NUMBER_OF_GOOD_FOOTER_BUTTONS; i++) {
@@ -54,14 +56,14 @@ public class BlogTest extends BaseTest {
         assertEquals(NUMBER_OF_GOOD_FOOTER_BUTTONS, goodTitlesCount);
     }
 
-    @Test
+    @Test(invocationCount = 3)
     public void mainLogoLinkTest () {
         basePage.mainLogoButtonClick();
         basePage.waitOneSeconds();
         assertEquals(MAIN_PAGE_URL, basePage.getCurrentUrl());
     }
 
-    @Test
+    @Test(invocationCount = 3)
     public void topPostBlogButtonTest () {
         int goodUrlsCount = 0;
         for (int i = 1; i <= NUMBER_OF_TOP_POST_BLOG_BUTTONS_BLOG_PAGE; i++) {
@@ -75,7 +77,7 @@ public class BlogTest extends BaseTest {
         assertEquals(NUMBER_OF_TOP_POST_BLOG_BUTTONS_BLOG_PAGE, goodUrlsCount);
     }
 
-    @Test
+    @Test(invocationCount = 3)
     public void topPostButtonTest () {
         int goodTitlesCount = 0;
         for (int i = 1; i <= NUMBER_OF_TOP_POST_BUTTONS_BLOG_PAGE; i++) {
@@ -89,14 +91,14 @@ public class BlogTest extends BaseTest {
         assertEquals(NUMBER_OF_TOP_POST_BUTTONS_BLOG_PAGE, goodTitlesCount);
     }
 
-    @Test
+    @Test(invocationCount = 3)
     public void authorButtonTest () {
         blogPage.authorButtonClick();
         blogPage.waitFiveSeconds();
         assertTrue(blogPage.authorUrlCheck());
     }
 
-    @Test
+    @Test(invocationCount = 3)
     public void successfulCommentFormTest () {
         blogPage.enterName(NAME)
                 .enterEmail(EMAIL)
@@ -107,7 +109,7 @@ public class BlogTest extends BaseTest {
         assertTrue(blogPage.submitMessageVisibleCheck());
     }
 
-    @Test
+    @Test(invocationCount = 3)
     public void unsuccessfulCommentFormTest () {
         blogPage.enterName(EMPTY)
                 .enterEmail(EMPTY)
@@ -118,7 +120,7 @@ public class BlogTest extends BaseTest {
         assertTrue(mainPage.inputErrorVisibleCheck());
     }
 
-    @Test
+    @Test(invocationCount = 3)
     public void nextSliderButtonTest () {
         blogPage.scrollToSlider();
         basePage.waitOneSeconds();

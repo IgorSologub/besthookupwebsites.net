@@ -1,7 +1,8 @@
 package tests.main;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 import tests.base.BaseTest;
 
 import static constants.Constant.Common.NUMBER_OF_FAQ_COLLAPSE_BUTTONS;
@@ -12,12 +13,13 @@ import static constants.Constant.Reg.NUMBER_OF_DOWNLOAD_APP_REG_BUTTONS;
 import static constants.Constant.Reg.REG_TITLES;
 import static constants.Constant.Reviews.*;
 import static constants.Constant.Urls.MAIN_PAGE_URL;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
 
 public class MainTest extends BaseTest {
 
-    @BeforeEach
+    @BeforeMethod
     public void setUp () {
         startDriver("main");
         basePage.goToUrl(MAIN_PAGE_URL);
@@ -25,7 +27,7 @@ public class MainTest extends BaseTest {
         basePage.closePopup();
     }
 
-    @Test
+    @Test(invocationCount = 3)
     public void headerButtonsTest () {
         int goodTitlesCount = 0;
         for (int i = 1; i <= NUMBER_OF_GOOD_HEADER_BUTTONS; i++) {
@@ -40,7 +42,7 @@ public class MainTest extends BaseTest {
         assertEquals(NUMBER_OF_GOOD_HEADER_BUTTONS, goodTitlesCount);
     }
 
-    @Test
+    @Test(invocationCount = 3)
     public void footerButtonsTest () {
         int goodTitlesCount = 0;
         for (int i = 1; i <= NUMBER_OF_GOOD_FOOTER_BUTTONS; i++) {
@@ -55,14 +57,14 @@ public class MainTest extends BaseTest {
         assertEquals(NUMBER_OF_GOOD_FOOTER_BUTTONS, goodTitlesCount);
     }
 
-    @Test
+    @Test(invocationCount = 3)
     public void mainLogoLinkTest () {
         basePage.mainLogoButtonClick();
         basePage.waitOneSeconds();
         assertEquals(MAIN_PAGE_URL, basePage.getCurrentUrl());
     }
 
-    @Test
+    @Test(invocationCount = 3)
     public void changeLanguageButtonTest () {
         int goodUrlsCount = 0;
         for (int i = 2; i <= MAX_AMOUNT_LANGUAGE_CHANGE_BUTTONS + 1; i++) {
@@ -79,23 +81,23 @@ public class MainTest extends BaseTest {
         assertEquals(MAX_AMOUNT_LANGUAGE_CHANGE_BUTTONS, goodUrlsCount);
     }
 
-    @Test
+    @Test(invocationCount = 3)
     public void learnMoreRegButtonTest () {
         mainPage.learnMoreRegButtonClick();
         basePage.nextTab();
-        basePage.waitOneMinute();
+        basePage.waitThirtySeconds();
         assertTrue(basePage.checkTitles(REG_TITLES));
         basePage.closeTabAndMoveToNext();
     }
 
-    @Test
+    @Test(invocationCount = 3)
     public void downloadAppRegButtonTest () {
         int goodTitlesCount = 0;
         for (int i = 1; i <= NUMBER_OF_DOWNLOAD_APP_REG_BUTTONS; i++) {
             basePage.waitOneSeconds();
             mainPage.downloadAppRegButtonClick(i);
             basePage.nextTab();
-            basePage.waitOneMinute();
+            basePage.waitThirtySeconds();
             if (basePage.checkTitles(REG_TITLES)) { goodTitlesCount++; }
             basePage.waitOneSeconds();
             basePage.closeTabAndMoveToNext();
@@ -103,7 +105,7 @@ public class MainTest extends BaseTest {
         assertEquals(NUMBER_OF_DOWNLOAD_APP_REG_BUTTONS, goodTitlesCount);
     }
 
-    @Test
+    @Test(invocationCount = 3)
     public void readReviewButtonTest () {
         int goodTitlesCount = 0;
         for (int i = 1; i <= NUMBER_OF_READ_REVIEW_BUTTONS_MAIN_PAGE; i++) {
@@ -117,7 +119,7 @@ public class MainTest extends BaseTest {
         assertEquals(NUMBER_OF_READ_REVIEW_BUTTONS_MAIN_PAGE, goodTitlesCount);
     }
 
-    @Test
+    @Test(invocationCount = 3)
     public void readArticleButtonTest () {
         int goodTitlesCount = 0;
         for (int i = 1; i <= NUMBER_OF_READ_ARTICLE_BUTTONS_MAIN_PAGE; i++) {
@@ -131,7 +133,7 @@ public class MainTest extends BaseTest {
         assertEquals(NUMBER_OF_READ_ARTICLE_BUTTONS_MAIN_PAGE, goodTitlesCount);
     }
 
-    @Test
+    @Test(invocationCount = 3)
     public void loadMoreButtonTest () {
         mainPage.loadMoreButtonClick();
         basePage.waitOneSeconds();
@@ -140,7 +142,7 @@ public class MainTest extends BaseTest {
         assertTrue(mainPage.cityNameTextVisibleCheck());
     }
 
-    @Test
+    @Test(invocationCount = 3)
     public void faqButtonTest () {
         int visibleTextCount = 0;
         for (int i = 1; i <= NUMBER_OF_FAQ_COLLAPSE_BUTTONS; i++) {
@@ -152,7 +154,7 @@ public class MainTest extends BaseTest {
         assertEquals(NUMBER_OF_FAQ_COLLAPSE_BUTTONS, visibleTextCount);
     }
 
-    @Test
+    @Test(invocationCount = 3)
     public void blogSliderTest () {
         mainPage.scrollToBlogSlider();
         mainPage.nextBlogSliderButtonClick();

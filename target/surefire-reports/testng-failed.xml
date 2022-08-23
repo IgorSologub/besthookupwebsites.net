@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="tests.main.MainTest">
+        <methods>
+          <include name="learnMoreRegButtonTest"/>
+          <include name="setUp"/>
+          <include name="mainLogoLinkTest"/>
+          <include name="clearCookiesAndExit"/>
+          <include name="readReviewButtonTest"/>
+          <include name="readArticleButtonTest"/>
+          <include name="loadMoreButtonTest"/>
+          <include name="downloadAppRegButtonTest"/>
+        </methods>
+      </class> <!-- tests.main.MainTest -->
+      <class name="tests.reviewCategory.ReviewCategoryTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="clearCookiesAndExit"/>
+          <include name="visitSiteRegButtonTest"/>
+        </methods>
+      </class> <!-- tests.reviewCategory.ReviewCategoryTest -->
+      <class name="tests.review.ReviewTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="clearCookiesAndExit"/>
+          <include name="pictureRegButtonsTest"/>
+          <include name="visitSiteRegButtonTest"/>
+        </methods>
+      </class> <!-- tests.review.ReviewTest -->
+      <class name="tests.localHookup.LocalHookupTest">
+        <methods>
+          <include name="visitSiteInTextButtonTest"/>
+          <include name="mainLogoLinkTest"/>
+          <include name="visitSiteButtonTest"/>
+          <include name="learnMoreButtonTest"/>
+          <include name="setUp"/>
+          <include name="clearCookiesAndExit"/>
+          <include name="loadMoreReviewButtonTest"/>
+          <include name="readFullReviewButtonTest"/>
+          <include name="loadMoreButtonTest"/>
+          <include name="readReviewButtonTest"/>
+        </methods>
+      </class> <!-- tests.localHookup.LocalHookupTest -->
+      <class name="tests.sugarDaddies.SugarDaddiesTest">
+        <methods>
+          <include name="startButtonTest"/>
+          <include name="visitSiteRegButtonInTopSitesForSugarDatingTest"/>
+          <include name="visitSiteRegButtonTest"/>
+          <include name="clearCookiesAndExit"/>
+          <include name="footerButtonsTest"/>
+          <include name="readReviewButtonTest"/>
+          <include name="addProfilesRegButtonTest"/>
+          <include name="sendMessageRegButtonTest"/>
+          <include name="findSugarCityButtonTest"/>
+          <include name="loadMoreRegButtonTest"/>
+          <include name="headerButtonsTest"/>
+          <include name="mainLogoLinkTest"/>
+          <include name="setUp"/>
+          <include name="readFullReviewButtonTest"/>
+        </methods>
+      </class> <!-- tests.sugarDaddies.SugarDaddiesTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

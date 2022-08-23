@@ -90,7 +90,8 @@ public class Constant {
                 "Jucydate",
                 "Craigslist",
                 "Exciting talks",
-                "Exciting chats with hot women"
+                "Exciting chats with hot women",
+                "Casualdating"
         );
         public static final int NUMBER_OF_DOWNLOAD_APP_REG_BUTTONS = 5;
         public static final int NUMBER_OF_VISIT_SITE_REG_BUTTONS = 24;
