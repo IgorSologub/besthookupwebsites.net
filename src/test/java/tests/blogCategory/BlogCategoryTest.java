@@ -22,11 +22,11 @@ public class BlogCategoryTest extends BaseTest {
         startDriver("reviewCategory");
         basePage.goToUrl(BLOG_CATEGORY_URL);
         basePage.waitOneSeconds();
-        basePage.closePopup();
     }
 
-    @Test(invocationCount = 3)
+    @Test(invocationCount = 3, successPercentage = 99)
     public void headerButtonsTest () {
+        basePage.closePopup();
         int goodTitlesCount = 0;
         for (int i = 1; i <= NUMBER_OF_GOOD_HEADER_BUTTONS; i++) {
             basePage.headerMenuOpen();
@@ -40,8 +40,9 @@ public class BlogCategoryTest extends BaseTest {
         assertEquals(NUMBER_OF_GOOD_HEADER_BUTTONS, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3)
+    @Test(invocationCount = 3, successPercentage = 99)
     public void footerButtonsTest () {
+        basePage.closePopup();
         int goodTitlesCount = 0;
         for (int i = 1; i <= NUMBER_OF_GOOD_FOOTER_BUTTONS; i++) {
             if (i == 7) {i++; goodTitlesCount++;}
@@ -55,15 +56,17 @@ public class BlogCategoryTest extends BaseTest {
         assertEquals(NUMBER_OF_GOOD_FOOTER_BUTTONS, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3)
+    @Test(invocationCount = 3, successPercentage = 99)
     public void mainLogoLinkTest () {
+        basePage.closePopup();
         basePage.mainLogoButtonClick();
         basePage.waitOneSeconds();
         assertEquals(MAIN_PAGE_URL, basePage.getCurrentUrl());
     }
 
-    @Test(invocationCount = 3)
+    @Test(invocationCount = 3, successPercentage = 99)
     public void blogPostTest () {
+        basePage.closePopup();
         int goodTitlesCount = 0;
         for (int i = 1; i <= NUMBER_OF_BLOG_POST_BUTTONS_BLOG_CATEGORY; i++) {
             basePage.waitOneSeconds();
@@ -76,8 +79,9 @@ public class BlogCategoryTest extends BaseTest {
         assertEquals(NUMBER_OF_BLOG_POST_BUTTONS_BLOG_CATEGORY, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3)
+    @Test(invocationCount = 3, successPercentage = 99)
     public void topPostBlogButtonTest () {
+        basePage.closePopup();
         int goodUrlsCount = 0;
         for (int i = 1; i <= NUMBER_OF_TOP_POST_BLOG_BUTTONS_BLOG_CATEGORY; i++) {
             basePage.waitOneSeconds();
@@ -90,8 +94,9 @@ public class BlogCategoryTest extends BaseTest {
         assertEquals(NUMBER_OF_TOP_POST_BLOG_BUTTONS_BLOG_CATEGORY, goodUrlsCount);
     }
 
-    @Test(invocationCount = 3)
+    @Test(invocationCount = 3, successPercentage = 99)
     public void topPostButtonTest () {
+        basePage.closePopup();
         int goodTitlesCount = 0;
         for (int i = 1; i <= NUMBER_OF_TOP_POST_BUTTONS_BLOG_CATEGORY; i++) {
             basePage.waitOneSeconds();

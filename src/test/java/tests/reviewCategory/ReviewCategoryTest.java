@@ -23,11 +23,11 @@ public class ReviewCategoryTest extends BaseTest {
         startDriver("reviewCategory");
         basePage.goToUrl(REVIEW_CATEGORY_URL);
         basePage.waitOneSeconds();
-        basePage.closePopup();
     }
 
-    @Test(invocationCount = 3)
+    @Test(invocationCount = 3, successPercentage = 99)
     public void headerButtonsTest () {
+        basePage.closePopup();
         int goodTitlesCount = 0;
         for (int i = 1; i <= NUMBER_OF_GOOD_HEADER_BUTTONS; i++) {
             basePage.headerMenuOpen();
@@ -41,8 +41,9 @@ public class ReviewCategoryTest extends BaseTest {
         assertEquals(NUMBER_OF_GOOD_HEADER_BUTTONS, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3)
+    @Test(invocationCount = 3, successPercentage = 99)
     public void footerButtonsTest () {
+        basePage.closePopup();
         int goodTitlesCount = 0;
         for (int i = 1; i <= NUMBER_OF_GOOD_FOOTER_BUTTONS; i++) {
             if (i == 7) {i++; goodTitlesCount++;}
@@ -56,15 +57,17 @@ public class ReviewCategoryTest extends BaseTest {
         assertEquals(NUMBER_OF_GOOD_FOOTER_BUTTONS, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3)
+    @Test(invocationCount = 3, successPercentage = 99)
     public void mainLogoLinkTest () {
+        basePage.closePopup();
         basePage.mainLogoButtonClick();
         basePage.waitOneSeconds();
         assertEquals(MAIN_PAGE_URL, basePage.getCurrentUrl());
     }
 
-    @Test(invocationCount = 3)
+    @Test(invocationCount = 3, successPercentage = 99)
     public void changeLanguageButtonTest () {
+        basePage.closePopup();
         int goodUrlsCount = 0;
         for (int i = 2; i <= MAX_AMOUNT_LANGUAGE_CHANGE_BUTTONS + 1; i++) {
             basePage.headerMenuOpen();
@@ -79,8 +82,9 @@ public class ReviewCategoryTest extends BaseTest {
         assertEquals(MAX_AMOUNT_LANGUAGE_CHANGE_BUTTONS, goodUrlsCount);
     }
 
-    @Test(invocationCount = 3)
+    @Test(invocationCount = 3, successPercentage = 99)
     public void visitSiteRegButtonTest () {
+        basePage.closePopup();
         int goodTitlesCount = 0;
         for (int i = 1; i <= NUMBER_OF_VISIT_SITE_REG_BUTTONS; i++) {
             basePage.waitOneSeconds();
@@ -95,8 +99,9 @@ public class ReviewCategoryTest extends BaseTest {
         assertEquals(NUMBER_OF_VISIT_SITE_REG_BUTTONS, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3)
+    @Test(invocationCount = 3, successPercentage = 99)
     public void readReviewButtonTest () {
+        basePage.closePopup();
         int goodTitlesCount = 0;
         for (int i = 1; i <= NUMBER_OF_READ_REVIEW_BUTTONS_REVIEW_CATEGORY; i++) {
             reviewCategoryPage.readReviewButtonClick(i);
@@ -109,8 +114,9 @@ public class ReviewCategoryTest extends BaseTest {
         assertEquals(NUMBER_OF_READ_REVIEW_BUTTONS_REVIEW_CATEGORY, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3)
+    @Test(invocationCount = 3, successPercentage = 99)
     public void paginationButtonTest () {
+        basePage.closePopup();
         reviewCategoryPage.paginationButtonClick();
         basePage.waitOneSeconds();
         assertTrue(reviewCategoryPage.urlPaginationCheck());

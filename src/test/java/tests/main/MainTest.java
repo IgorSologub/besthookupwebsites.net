@@ -24,11 +24,11 @@ public class MainTest extends BaseTest {
         startDriver("main");
         basePage.goToUrl(MAIN_PAGE_URL);
         basePage.waitOneSeconds();
-        basePage.closePopup();
     }
 
-    @Test(invocationCount = 3)
+    @Test(invocationCount = 3, successPercentage = 99)
     public void headerButtonsTest () {
+        basePage.closePopup();
         int goodTitlesCount = 0;
         for (int i = 1; i <= NUMBER_OF_GOOD_HEADER_BUTTONS; i++) {
             basePage.headerMenuOpen();
@@ -42,8 +42,9 @@ public class MainTest extends BaseTest {
         assertEquals(NUMBER_OF_GOOD_HEADER_BUTTONS, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3)
+    @Test(invocationCount = 3, successPercentage = 99)
     public void footerButtonsTest () {
+        basePage.closePopup();
         int goodTitlesCount = 0;
         for (int i = 1; i <= NUMBER_OF_GOOD_FOOTER_BUTTONS; i++) {
             if (i == 7) {i++; goodTitlesCount++;}
@@ -57,15 +58,17 @@ public class MainTest extends BaseTest {
         assertEquals(NUMBER_OF_GOOD_FOOTER_BUTTONS, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3)
+    @Test(invocationCount = 3, successPercentage = 99)
     public void mainLogoLinkTest () {
+        basePage.closePopup();
         basePage.mainLogoButtonClick();
         basePage.waitOneSeconds();
         assertEquals(MAIN_PAGE_URL, basePage.getCurrentUrl());
     }
 
-    @Test(invocationCount = 3)
+    @Test(invocationCount = 3, successPercentage = 99)
     public void changeLanguageButtonTest () {
+        basePage.closePopup();
         int goodUrlsCount = 0;
         for (int i = 2; i <= MAX_AMOUNT_LANGUAGE_CHANGE_BUTTONS + 1; i++) {
             basePage.waitOneSeconds();
@@ -81,8 +84,9 @@ public class MainTest extends BaseTest {
         assertEquals(MAX_AMOUNT_LANGUAGE_CHANGE_BUTTONS, goodUrlsCount);
     }
 
-    @Test(invocationCount = 3)
+    @Test(invocationCount = 3, successPercentage = 99)
     public void learnMoreRegButtonTest () {
+        basePage.closePopup();
         mainPage.learnMoreRegButtonClick();
         basePage.nextTab();
         basePage.waitThirtySeconds();
@@ -90,8 +94,9 @@ public class MainTest extends BaseTest {
         basePage.closeTabAndMoveToNext();
     }
 
-    @Test(invocationCount = 3)
+    @Test(invocationCount = 3, successPercentage = 99)
     public void downloadAppRegButtonTest () {
+        basePage.closePopup();
         int goodTitlesCount = 0;
         for (int i = 1; i <= NUMBER_OF_DOWNLOAD_APP_REG_BUTTONS; i++) {
             basePage.waitOneSeconds();
@@ -105,8 +110,9 @@ public class MainTest extends BaseTest {
         assertEquals(NUMBER_OF_DOWNLOAD_APP_REG_BUTTONS, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3)
+    @Test(invocationCount = 3, successPercentage = 99)
     public void readReviewButtonTest () {
+        basePage.closePopup();
         int goodTitlesCount = 0;
         for (int i = 1; i <= NUMBER_OF_READ_REVIEW_BUTTONS_MAIN_PAGE; i++) {
             basePage.waitOneSeconds();
@@ -119,8 +125,9 @@ public class MainTest extends BaseTest {
         assertEquals(NUMBER_OF_READ_REVIEW_BUTTONS_MAIN_PAGE, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3)
+    @Test(invocationCount = 3, successPercentage = 99)
     public void readArticleButtonTest () {
+        basePage.closePopup();
         int goodTitlesCount = 0;
         for (int i = 1; i <= NUMBER_OF_READ_ARTICLE_BUTTONS_MAIN_PAGE; i++) {
             basePage.waitOneSeconds();
@@ -133,8 +140,9 @@ public class MainTest extends BaseTest {
         assertEquals(NUMBER_OF_READ_ARTICLE_BUTTONS_MAIN_PAGE, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3)
+    @Test(invocationCount = 3, successPercentage = 99)
     public void loadMoreButtonTest () {
+        basePage.closePopup();
         mainPage.loadMoreButtonClick();
         basePage.waitOneSeconds();
         mainPage.loadMoreButtonClick();
@@ -142,8 +150,9 @@ public class MainTest extends BaseTest {
         assertTrue(mainPage.cityNameTextVisibleCheck());
     }
 
-    @Test(invocationCount = 3)
+    @Test(invocationCount = 3, successPercentage = 99)
     public void faqButtonTest () {
+        basePage.closePopup();
         int visibleTextCount = 0;
         for (int i = 1; i <= NUMBER_OF_FAQ_COLLAPSE_BUTTONS; i++) {
             basePage.waitOneSeconds();
@@ -154,8 +163,9 @@ public class MainTest extends BaseTest {
         assertEquals(NUMBER_OF_FAQ_COLLAPSE_BUTTONS, visibleTextCount);
     }
 
-    @Test(invocationCount = 3)
+    @Test(invocationCount = 3, successPercentage = 99)
     public void blogSliderTest () {
+        basePage.closePopup();
         mainPage.scrollToBlogSlider();
         mainPage.nextBlogSliderButtonClick();
         basePage.waitOneSeconds();
