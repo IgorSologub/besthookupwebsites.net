@@ -25,7 +25,7 @@ public class ReviewCategoryTest extends BaseTest {
         basePage.waitOneSeconds();
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void headerButtonsTest () {
         basePage.closePopup();
         int goodTitlesCount = 0;
@@ -41,7 +41,7 @@ public class ReviewCategoryTest extends BaseTest {
         assertEquals(NUMBER_OF_GOOD_HEADER_BUTTONS, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void footerButtonsTest () {
         basePage.closePopup();
         int goodTitlesCount = 0;
@@ -57,7 +57,7 @@ public class ReviewCategoryTest extends BaseTest {
         assertEquals(NUMBER_OF_GOOD_FOOTER_BUTTONS, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void mainLogoLinkTest () {
         basePage.closePopup();
         basePage.mainLogoButtonClick();
@@ -65,7 +65,7 @@ public class ReviewCategoryTest extends BaseTest {
         assertEquals(MAIN_PAGE_URL, basePage.getCurrentUrl());
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void changeLanguageButtonTest () {
         basePage.closePopup();
         int goodUrlsCount = 0;
@@ -82,7 +82,7 @@ public class ReviewCategoryTest extends BaseTest {
         assertEquals(MAX_AMOUNT_LANGUAGE_CHANGE_BUTTONS, goodUrlsCount);
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void visitSiteRegButtonTest () {
         basePage.closePopup();
         int goodTitlesCount = 0;
@@ -99,7 +99,7 @@ public class ReviewCategoryTest extends BaseTest {
         assertEquals(NUMBER_OF_VISIT_SITE_REG_BUTTONS, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void readReviewButtonTest () {
         basePage.closePopup();
         int goodTitlesCount = 0;
@@ -114,7 +114,7 @@ public class ReviewCategoryTest extends BaseTest {
         assertEquals(NUMBER_OF_READ_REVIEW_BUTTONS_REVIEW_CATEGORY, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void paginationButtonTest () {
         basePage.closePopup();
         reviewCategoryPage.paginationButtonClick();

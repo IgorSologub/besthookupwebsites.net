@@ -26,7 +26,7 @@ public class LocalHookupTest extends BaseTest {
         basePage.waitOneSeconds();
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void headerButtonsTest () {
         basePage.closePopup();
         int goodTitlesCount = 0;
@@ -42,7 +42,7 @@ public class LocalHookupTest extends BaseTest {
         assertEquals(NUMBER_OF_GOOD_HEADER_BUTTONS, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void footerButtonsTest () {
         basePage.closePopup();
         int goodTitlesCount = 0;
@@ -58,7 +58,7 @@ public class LocalHookupTest extends BaseTest {
         assertEquals(NUMBER_OF_GOOD_FOOTER_BUTTONS, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void mainLogoLinkTest () {
         basePage.closePopup();
         basePage.mainLogoButtonClick();
@@ -66,7 +66,7 @@ public class LocalHookupTest extends BaseTest {
         assertEquals(MAIN_PAGE_URL, basePage.getCurrentUrl());
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void learnMoreButtonTest () {
         basePage.closePopup();
         basePage.waitOneSeconds();
@@ -78,7 +78,7 @@ public class LocalHookupTest extends BaseTest {
         basePage.closeTabAndMoveToNext();
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void loadMoreButtonTest () {
         basePage.closePopup();
         basePage.waitOneSeconds();
@@ -89,7 +89,7 @@ public class LocalHookupTest extends BaseTest {
         assertTrue(localHookupPage.cityBlockCheck());
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void visitSiteButtonTest () {
         basePage.closePopup();
         int goodTitlesCount = 0;
@@ -106,7 +106,7 @@ public class LocalHookupTest extends BaseTest {
         assertEquals(NUMBER_OF_VISIT_SITE_REG_BUTTONS_LOCAL_HOOKUP_PAGE, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void readReviewButtonTest () {
         basePage.closePopup();
         int goodTitlesCount = 0;
@@ -121,7 +121,7 @@ public class LocalHookupTest extends BaseTest {
         assertEquals(NUMBER_OF_RED_REVIEW_LOCAL_HOOKUP_PAGE, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void latestNewsButtonTest () {
         basePage.closePopup();
         int goodTitlesCount = 0;
@@ -136,7 +136,7 @@ public class LocalHookupTest extends BaseTest {
         assertEquals(NUMBER_OF_LATEST_REVIEW_BUTTONS, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void loadMoreReviewButtonTest () {
         basePage.closePopup();
         basePage.waitOneSeconds();
@@ -145,7 +145,7 @@ public class LocalHookupTest extends BaseTest {
         assertTrue(localHookupPage.reviewBlockCheck());
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void visitSiteInTextButtonTest () {
         basePage.closePopup();
         int goodTitlesCount = 0;
@@ -161,7 +161,7 @@ public class LocalHookupTest extends BaseTest {
         assertEquals(NUMBER_OF_VISIT_SITE_IN_TEXT_REG_BUTTON, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void readFullReviewButtonTest () {
         basePage.closePopup();
         int goodTitlesCount = 0;
@@ -176,7 +176,7 @@ public class LocalHookupTest extends BaseTest {
         assertEquals(NUMBER_OF_READ_FULL_REVIEW_LOCAL_HOOKUP_PAGE, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void faqCollapseButtonTest () {
         basePage.closePopup();
         basePage.waitOneSeconds();
@@ -185,7 +185,7 @@ public class LocalHookupTest extends BaseTest {
         assertTrue(localHookupPage.faqCollapseTextCheck());
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void articlesButtonTest () {
         basePage.closePopup();
         int goodTitlesCount = 0;
@@ -200,7 +200,7 @@ public class LocalHookupTest extends BaseTest {
         assertEquals(NUMBER_OF_ARTICLES_LOCAL_HOOKUP_PAGE, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void authorButtonTest () {
         basePage.closePopup();
         basePage.waitOneSeconds();
@@ -209,7 +209,7 @@ public class LocalHookupTest extends BaseTest {
         assertTrue(localHookupPage.authorCheck());
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void blogSliderTest () {
         basePage.closePopup();
         localHookupPage.scrollToBlogSlider();

@@ -24,7 +24,7 @@ public class EscortTest extends BaseTest {
         basePage.waitOneSeconds();
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void headerButtonsTest () {
         basePage.closePopup();
         int goodTitlesCount = 0;
@@ -40,7 +40,7 @@ public class EscortTest extends BaseTest {
         assertEquals(NUMBER_OF_GOOD_HEADER_BUTTONS, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void footerButtonsTest () {
         basePage.closePopup();
         int goodTitlesCount = 0;
@@ -56,7 +56,7 @@ public class EscortTest extends BaseTest {
         assertEquals(NUMBER_OF_GOOD_FOOTER_BUTTONS, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void mainLogoLinkTest () {
         basePage.closePopup();
         basePage.mainLogoButtonClick();
@@ -64,7 +64,7 @@ public class EscortTest extends BaseTest {
         assertEquals(MAIN_PAGE_URL, basePage.getCurrentUrl());
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void cityButtonTest () {
         basePage.closePopup();
         escortPage.cityButtonClick();
@@ -72,7 +72,7 @@ public class EscortTest extends BaseTest {
         assertTrue(escortPage.cityButtonCheck());
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void inputCitySearchTest () {
         basePage.closePopup();
         basePage.waitFiveSeconds();

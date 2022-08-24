@@ -25,7 +25,7 @@ public class BlogTest extends BaseTest {
         basePage.waitOneSeconds();
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void headerButtonsTest () {
         basePage.closePopup();
         int goodTitlesCount = 0;
@@ -41,7 +41,7 @@ public class BlogTest extends BaseTest {
         assertEquals(NUMBER_OF_GOOD_HEADER_BUTTONS, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void footerButtonsTest () {
         basePage.closePopup();
         int goodTitlesCount = 0;
@@ -57,7 +57,7 @@ public class BlogTest extends BaseTest {
         assertEquals(NUMBER_OF_GOOD_FOOTER_BUTTONS, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void mainLogoLinkTest () {
         basePage.closePopup();
         basePage.mainLogoButtonClick();
@@ -65,7 +65,7 @@ public class BlogTest extends BaseTest {
         assertEquals(MAIN_PAGE_URL, basePage.getCurrentUrl());
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void topPostBlogButtonTest () {
         basePage.closePopup();
         int goodUrlsCount = 0;
@@ -80,7 +80,7 @@ public class BlogTest extends BaseTest {
         assertEquals(NUMBER_OF_TOP_POST_BLOG_BUTTONS_BLOG_PAGE, goodUrlsCount);
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void topPostButtonTest () {
         basePage.closePopup();
         int goodTitlesCount = 0;
@@ -95,7 +95,7 @@ public class BlogTest extends BaseTest {
         assertEquals(NUMBER_OF_TOP_POST_BUTTONS_BLOG_PAGE, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void authorButtonTest () {
         basePage.closePopup();
         blogPage.authorButtonClick();
@@ -103,7 +103,7 @@ public class BlogTest extends BaseTest {
         assertTrue(blogPage.authorUrlCheck());
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void successfulCommentFormTest () {
         basePage.closePopup();
         blogPage.enterName(NAME)
@@ -115,7 +115,7 @@ public class BlogTest extends BaseTest {
         assertTrue(blogPage.submitMessageVisibleCheck());
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void unsuccessfulCommentFormTest () {
         basePage.closePopup();
         blogPage.enterName(EMPTY)
@@ -127,7 +127,7 @@ public class BlogTest extends BaseTest {
         assertTrue(mainPage.inputErrorVisibleCheck());
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void nextSliderButtonTest () {
         basePage.closePopup();
         blogPage.scrollToSlider();

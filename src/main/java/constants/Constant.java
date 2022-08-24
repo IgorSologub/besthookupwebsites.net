@@ -91,7 +91,9 @@ public class Constant {
                 "Craigslist",
                 "Exciting talks",
                 "Exciting chats with hot women",
-                "Casualdating"
+                "Casualdating",
+                "Loveeto.com",
+                "Find the one who's right for you"
         );
         public static final int NUMBER_OF_DOWNLOAD_APP_REG_BUTTONS = 5;
         public static final int NUMBER_OF_VISIT_SITE_REG_BUTTONS = 24;

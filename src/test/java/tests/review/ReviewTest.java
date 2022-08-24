@@ -26,7 +26,7 @@ public class ReviewTest extends BaseTest {
         basePage.waitOneSeconds();
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void headerButtonsTest () {
         basePage.closePopup();
         int goodTitlesCount = 0;
@@ -42,7 +42,7 @@ public class ReviewTest extends BaseTest {
         assertEquals(NUMBER_OF_GOOD_HEADER_BUTTONS, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void footerButtonsTest () {
         basePage.closePopup();
         int goodTitlesCount = 0;
@@ -58,7 +58,7 @@ public class ReviewTest extends BaseTest {
         assertEquals(NUMBER_OF_GOOD_FOOTER_BUTTONS, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void mainLogoLinkTest () {
         basePage.closePopup();
         basePage.mainLogoButtonClick();
@@ -66,7 +66,7 @@ public class ReviewTest extends BaseTest {
         assertEquals(MAIN_PAGE_URL, basePage.getCurrentUrl());
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void visitSiteRegButtonTest () {
         basePage.closePopup();
         reviewPage.visitSiteRegButtonClick();
@@ -76,7 +76,7 @@ public class ReviewTest extends BaseTest {
         basePage.closeTabAndMoveToNext();
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void pictureRegButtonsTest () {
         basePage.closePopup();
         int goodTitlesCount = 0;
@@ -92,7 +92,7 @@ public class ReviewTest extends BaseTest {
         assertEquals(NUMBER_OF_PICTURE_REG_BUTTONS, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void typesOfRelationshipsButtonTest () {
         basePage.closePopup();
         int goodTitlesCount = 0;
@@ -107,7 +107,7 @@ public class ReviewTest extends BaseTest {
         assertEquals(NUMBER_OF_TYPES_OF_RELATIONSHIPS_BUTTONS_REVIEW_PAGE, goodTitlesCount);
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void startButtonTest () {
         basePage.closePopup();
         reviewPage.startButtonClick();
@@ -116,7 +116,7 @@ public class ReviewTest extends BaseTest {
         basePage.waitOneSeconds();
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void successfulCommentFormTest () {
         basePage.closePopup();
         reviewPage.enterName(NAME)
@@ -128,7 +128,7 @@ public class ReviewTest extends BaseTest {
         assertTrue(reviewPage.submitMessageVisibleCheck());
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void unsuccessfulCommentFormTest () {
         basePage.closePopup();
         reviewPage.enterName(EMPTY)
@@ -140,7 +140,7 @@ public class ReviewTest extends BaseTest {
         assertTrue(mainPage.inputErrorVisibleCheck());
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void nextSliderButtonTest () {
         basePage.closePopup();
         reviewPage.scrollToSlider();
@@ -150,7 +150,7 @@ public class ReviewTest extends BaseTest {
         assertTrue(reviewPage.sliderBlockVisibleCheck());
     }
 
-    @Test(invocationCount = 3, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 99)
     public void latestReviewsButtonTest () {
         basePage.closePopup();
         int goodTitlesCount = 0;
