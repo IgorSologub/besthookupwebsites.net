@@ -89,7 +89,7 @@ public class LocalHookupTest extends BaseTest {
         assertTrue(localHookupPage.cityBlockCheck());
     }
 
-    @Test(invocationCount = 2, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 80)
     public void visitSiteButtonTest () {
         basePage.closePopup();
         int goodTitlesCount = 0;
@@ -145,7 +145,7 @@ public class LocalHookupTest extends BaseTest {
         assertTrue(localHookupPage.reviewBlockCheck());
     }
 
-    @Test(invocationCount = 2, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 80)
     public void visitSiteInTextButtonTest () {
         basePage.closePopup();
         int goodTitlesCount = 0;

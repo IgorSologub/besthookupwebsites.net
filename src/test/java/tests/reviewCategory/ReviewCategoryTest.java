@@ -82,7 +82,7 @@ public class ReviewCategoryTest extends BaseTest {
         assertEquals(MAX_AMOUNT_LANGUAGE_CHANGE_BUTTONS, goodUrlsCount);
     }
 
-    @Test(invocationCount = 2, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 80)
     public void visitSiteRegButtonTest () {
         basePage.closePopup();
         int goodTitlesCount = 0;

@@ -66,7 +66,7 @@ public class ReviewTest extends BaseTest {
         assertEquals(MAIN_PAGE_URL, basePage.getCurrentUrl());
     }
 
-    @Test(invocationCount = 2, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 80)
     public void visitSiteRegButtonTest () {
         basePage.closePopup();
         reviewPage.visitSiteRegButtonClick();
@@ -76,7 +76,7 @@ public class ReviewTest extends BaseTest {
         basePage.closeTabAndMoveToNext();
     }
 
-    @Test(invocationCount = 2, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 80)
     public void pictureRegButtonsTest () {
         basePage.closePopup();
         int goodTitlesCount = 0;

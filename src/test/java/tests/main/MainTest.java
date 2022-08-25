@@ -94,7 +94,7 @@ public class MainTest extends BaseTest {
         basePage.closeTabAndMoveToNext();
     }
 
-    @Test(invocationCount = 2, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 80)
     public void downloadAppRegButtonTest () {
         basePage.closePopup();
         int goodTitlesCount = 0;

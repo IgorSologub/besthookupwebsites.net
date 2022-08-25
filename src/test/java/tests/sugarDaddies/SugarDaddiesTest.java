@@ -65,7 +65,7 @@ public class SugarDaddiesTest extends BaseTest {
         assertEquals(MAIN_PAGE_URL, basePage.getCurrentUrl());
     }
 
-    @Test(invocationCount = 2, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 80)
     public void visitSiteRegButtonTest () {
         basePage.closePopup();
         int goodTitlesCount = 0;
@@ -82,7 +82,7 @@ public class SugarDaddiesTest extends BaseTest {
         assertEquals(NUMBER_OF_VISIT_SITE_REG_BUTTONS_SUGAR_DADDIES_PAGE, goodTitlesCount);
     }
 
-    @Test(invocationCount = 2, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 80)
     public void visitSiteRegButtonInTopSitesForSugarDatingTest () {
         basePage.closePopup();
         int goodTitlesCount = 0;
@@ -99,7 +99,7 @@ public class SugarDaddiesTest extends BaseTest {
         assertEquals(NUMBER_OF_VISIT_SITE_REG_BUTTONS_IN_TOP_SITES_FOR_SUGAR_DATING_SUGAR_DADDIES_PAGE, goodTitlesCount);
     }
 
-    @Test(invocationCount = 2, successPercentage = 99)
+    @Test(invocationCount = 2, successPercentage = 80)
     public void sendMessageRegButtonTest () {
         basePage.closePopup();
         int goodTitlesCount = 0;
