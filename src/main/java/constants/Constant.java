@@ -93,7 +93,10 @@ public class Constant {
                 "Exciting chats with hot women",
                 "Casualdating",
                 "Loveeto.com",
-                "Find the one who's right for you"
+                "Find the one who's right for you",
+                "BeSexcited",
+                "My Dirty Neighbour",
+                "Online Hookups"
         );
         public static final int NUMBER_OF_DOWNLOAD_APP_REG_BUTTONS = 5;
         public static final int NUMBER_OF_VISIT_SITE_REG_BUTTONS = 24;
