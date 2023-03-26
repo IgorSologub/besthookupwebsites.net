@@ -3,6 +3,7 @@ package common;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.opera.OperaDriver;
@@ -17,8 +18,11 @@ public class CommonActions {
         WebDriver driver = null;
         switch (browser) {
             case "CHROME" :
-                System.setProperty("webdriver.chrome.driver", "src\\main\\resources\\chromedriver.exe");
-                driver = new ChromeDriver();
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("--remote-allow-origins=*");
+                //System.setProperty("webdriver.chrome.driver", "C:\\Users\\Igor\\Desktop\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\Desktop\\chromedriver.exe");
+                driver = new ChromeDriver(options);
                 break;
             case "OPERA" :
                 System.setProperty("webdriver.opera.driver", "src\\main\\resources\\operadriver.exe");
